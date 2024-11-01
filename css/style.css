@@ -1,0 +1,60 @@
+/* Add all your styles here */<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffefea;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 300px;
+            position: relative;
+        }
+        .card h1 {
+            color: #ff6f61;
+        }
+        .card p {
+            font-size: 1.2em;
+            color: #333;
+        }
+        .birthday-cake {
+            width: 100px;
+            margin-top: 15px;
+        }
+        .balloons {
+            position: absolute;
+            top: -30px;
+            right: -30px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <img src="https://i.imgur.com/FtHcK4t.png" alt="Balloons" class="balloons">
+        <h1 th:text="${birthdayMessage}"></h1>
+        <p>Hey <span th:text="${name}"></span>, you are <span th:text="${age}"></span> years old today!</p>
+        <img src="https://i.imgur.com/Fv44D9v.png" alt="Birthday Cake" class="birthday-cake">
+    </div>
+</div>
+
+</body>
+</html>
