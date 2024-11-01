@@ -1,83 +1,81 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Life & Style News</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        .container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-        .article {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-        }
-        .article img {
-            width: 100%;
-            height: auto;
-        }
-        .headline {
-            font-size: 18px;
-            font-weight: bold;
-            margin: 10px 0;
-        }
-        .summary {
-            font-size: 14px;
-            color: #555;
-        }
-        .section-title {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <title>Life & Style</title>
 </head>
 <body>
-    <div class="section-title">LIFE & STYLE</div>
-    <div class="container">
-        <div class="article">
-            <img src="path/to/image1.jpg" alt="Image 1">
-            <div class="headline">Karnataka High Court grants interim bail to actor Darshan Thoogudeepa for surgery</div>
-            <div class="summary">Darshan’s report reveals that he had been experiencing numbness in both legs</div>
+    <section class="news-section">
+        <h1>Life & Style</h1>
+        <div class="news-grid">
+            <div class="news-card">
+                <img src="image1.jpg" alt="News Image 1">
+                <h2>KARNATAKA HIGH COURT GRANTS INTERIM BAIL TO ACTOR DARSHAN THOOGUDEEPA FOR SURGERY</h2>
+                <p>Darshan's report reveals that he had been experiencing numbness in both legs.</p>
+            </div>
+            <div class="news-card">
+                <img src="image2.jpg" alt="News Image 2">
+                <h2>FIRDOUS JAMAL'S WIFE FILES FOR DIVORCE AFTER 35 YEARS OF MARRIAGE</h2>
+                <p>Hamza says his mother had endured numerous hardships in hopes of improvement.</p>
+            </div>
+            <!-- Add more news-card blocks as needed -->
         </div>
-        <div class="article">
-            <img src="path/to/image2.jpg" alt="Image 2">
-            <div class="headline">Firdous Jamal’s wife files for divorce after 35 years of marriage</div>
-            <div class="summary">Hamza says his mother had endured numerous hardships in hopes of improvement</div>
-        </div>
-        <div class="article">
-            <img src="path/to/image3.jpg" alt="Image 3">
-            <div class="headline">Mahira Khan faces backlash over ramp walk performance</div>
-            <div class="summary">Mahira Khan is occupied with the filming of her upcoming Netflix project</div>
-        </div>
-        <div class="article">
-            <img src="path/to/image4.jpg" alt="Image 4">
-            <div class="headline">CNN suspends conservative commentator for attack on journalist Mehdi Hasan</div>
-            <div class="summary">American news channel apologises for paper comment by conservative panellist to Hasan</div>
-        </div>
-        <div class="article">
-            <img src="path/to/image5.jpg" alt="Image 5">
-            <div class="headline">Arjun Kapoor confirms separation from Malaika Arora</div>
-            <div class="summary">Speculation about their breakup had been circulating on social media for several days</div>
-        </div>
-        <div class="article">
-            <img src="path/to/image6.jpg" alt="Image 6">
-            <div class="headline">Tom Cruise teams up with Alejandro Gonzalez Inarritu for new film</div>
-            <div class="summary">Shooting set to begin in UK next month</div>
-        </div>
-        <div class="article">
-            <img src="path/to/image7.jpg" alt="Image 7">
-            <div class="headline">Viral optical illusion dress resurfaces at Vermont Yard sale, sparking new buzz</div>
-            <div class="summary">The dress was designed by British brand Roman Originals</div>
-        </div>
-    </div>
+    </section>
 </body>
 </html>
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.news-section {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.news-section h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.news-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.news-card h2 {
+    font-size: 1.1em;
+    margin: 15px 0;
+    color: #333;
+}
+
+.news-card p {
+    font-size: 0.9em;
+    color: #555;
+}
